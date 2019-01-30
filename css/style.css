@@ -1,0 +1,5 @@
+.header {width: 100%; padding-top: 10px; height: 60px; border-bottom: 1px solid #ebebeb;}
+.adress {position: relative; left: 100px;}
+.telefon {position: relative; left: 330px;}
+.login_reg_box {position: relative; bottom: 50px;padding-right: 100px;}
+.login_reg_box li a {border: 1px solid #ebebeb; padding: 16px;}
