@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="header">
-    <div class="container">
+    <div class="container col-xl-7">
       <ul class="nav">
         <li class="nav-item adress">
           <a class="nav-link" href="#">József körút 60 Budapest</a>
@@ -22,11 +22,11 @@
         </li>
       </ul>
       <ul class="nav justify-content-end login_reg_box">
-        <li class="nav-item icons">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-instagram"></a>
-        </li>
+          <div class="icon-bar icons">
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="google"><i class="fa fa-instagram"></i></a>
+          </div>
         <li class="nav-item login">
           <a class="nav-link bejelent" href="#">Bejelentkezés</a>
         </li>
@@ -38,7 +38,7 @@
     </div>
   </div>
   <nav class="navbar navbar-expand-xl">
-    <div class="container menu">
+    <div class="container menu col-xl-7">
       <a class="navbar-brand" href="#">
         <img src="kepek/dubai_pub_logo3.png" alt="sisha_bar_logo">
       </a>
@@ -69,6 +69,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Foglalás</a>
+            </li>
+            <li class="nav-item">
+              <button class="openBtn" onclick="openSearch()">Open Search Box</button>
             </li>
           </ul>
 

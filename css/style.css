@@ -2,19 +2,25 @@ body {
   max-width: 3000px;
   margin: auto;
 }
+/* header  */
 .header {
   width: 100%;
   padding-top: 10px;
-  height: 58px;
+  height: 48px;
   border-bottom: 1px solid #ebebeb;
-  font-size: 12px;
+  font-size: 14px;
+  position: relative;
+  top: 0.3em;
 }
 .adress {
   position: relative;
+  bottom: 8px;
+  left: 0px;
 }
 .telefon {
   position: relative;
-  left: 100px;
+  left: 200px;
+  bottom: 8px;
 }
 .login_reg_box {
   position: relative;
@@ -24,21 +30,26 @@ body {
   border: 1px solid #ebebeb;
   border-right: 0;
   text-decoration: none;
-  padding: 16px;
 }
 .fa {
-  font-size: 20px;
-  width: 50px;
-  text-decoration: none;
+  padding: 10px;
+  border-bottom: 3px solid #f89399;
 }
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.8;
+}
+.login a {
+  padding: 15px;
+}
+.reg a {
+  padding: 15px;
 }
 .fa-facebook {
   background: #f7474a;
   color: white;
+  padding-left: 12px;
+  padding-right: 12px;
 }
-
 .fa-twitter {
   background: #f7474a;
   color: white;
@@ -46,6 +57,8 @@ body {
 .fa-instagram {
   background: #f7474a;
   color: white;
+  padding-left: 11px;
+  padding-right: 11px;
 }
 .reg {
   border-right: 1px solid #ebebeb;
@@ -53,22 +66,24 @@ body {
 .icons {
   position: relative;
   right: 5px;
-  top: 0.05em;
+  top: 0.55em;
 }
 .icons a:hover {
   color: white;
 }
 .menu li {
-  padding: 10px 10px;
-  font-size: 17px;
+  padding: 10px 1px;
+  font-size: 19px;
 }
 .menu a {
     color: #959595;
 }
 .navbar-brand {
-  bottom: 30px;
+  position: relative;
+  bottom: 35px;
 }
 .navbar-brand img {
   width: 220px;
   height: 100px;
 }
+/* ---- header ---- */
