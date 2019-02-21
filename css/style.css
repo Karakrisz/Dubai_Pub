@@ -2,6 +2,7 @@ body {
   max-width: 3000px;
   margin: auto;
 }
+
 /* header  */
 .header {
   width: 100%;
@@ -11,79 +12,190 @@ body {
   font-size: 14px;
   position: relative;
   top: 0.3em;
+  padding-left: 300px;
+  padding-right: 300px;
 }
+
+.header a {
+  color: #b7b7b7;
+}
+
 .adress {
   position: relative;
   bottom: 8px;
   left: 0px;
 }
+
 .telefon {
   position: relative;
   left: 200px;
   bottom: 8px;
 }
+
 .login_reg_box {
   position: relative;
   bottom: 50px;
 }
+
 .login_reg_box li a {
   border: 1px solid #ebebeb;
   border-right: 0;
+  border-bottom: 0;
   text-decoration: none;
 }
-.fa {
-  padding: 10px;
+
+.icons .fa {
   border-bottom: 3px solid #f89399;
 }
+
 .fa:hover {
   opacity: 0.8;
 }
+
 .login a {
   padding: 15px;
 }
+
 .reg a {
   padding: 15px;
 }
+
 .fa-facebook {
   background: #f7474a;
   color: white;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding: 10px 13px;
+
 }
+
 .fa-twitter {
   background: #f7474a;
   color: white;
+  padding: 10px;
 }
+
 .fa-instagram {
   background: #f7474a;
   color: white;
-  padding-left: 11px;
-  padding-right: 11px;
+  padding: 10px 11px;
 }
+
 .reg {
   border-right: 1px solid #ebebeb;
 }
+
 .icons {
   position: relative;
   right: 5px;
   top: 0.55em;
 }
+
 .icons a:hover {
   color: white;
 }
+
+.menu {
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
 .menu li {
   padding: 10px 1px;
   font-size: 19px;
 }
+
 .menu a {
-    color: #959595;
+  color: #888888;
 }
+
 .navbar-brand {
   position: relative;
   bottom: 35px;
 }
+
 .navbar-brand img {
-  width: 220px;
-  height: 100px;
+  width: 250px;
+  height: 110px;
 }
+
+/* search  */
+* {
+  box-sizing: border-box;
+}
+
+.openBtn {
+  background: #f6f6f6;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  right: 70px;
+  border-radius: 50%;
+}
+
+.openBtn:hover {
+  background: #bbb;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background: #bbb;
+}
+
 /* ---- header ---- */
