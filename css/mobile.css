@@ -1,0 +1,26 @@
+/* header  */
+.header {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.adress {
+    position: relative;
+    bottom: 8px;
+    left: 0px;
+}
+
+.telefon {
+    position: relative;
+    left: 0px;
+    bottom: 8px;
+}
+
+.menu {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* search  */
+
+/* ---- header ---- */

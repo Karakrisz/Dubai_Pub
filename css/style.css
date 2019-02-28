@@ -3,6 +3,7 @@ body {
   margin: auto;
 }
 
+
 /* header  */
 .header {
   width: 100%;
@@ -199,3 +200,8 @@ body {
 }
 
 /* ---- header ---- */
+@media screen and (max-width: 1199px) {
+  .openBtn {
+    right: 0;
+  }
+}

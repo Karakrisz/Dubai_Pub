@@ -1,0 +1,24 @@
+/* header  */
+.header {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.adress {
+    position: relative;
+    bottom: 8px;
+    left: 0px;
+}
+
+.telefon {
+    position: relative;
+    left: 0px;
+    bottom: 8px;
+}
+
+.menu {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+/* ---- header ---- */
