@@ -4,7 +4,7 @@ body {
 }
 
 
-/* header  */
+/* Header  */
 .header {
   width: 100%;
   padding-top: 10px;
@@ -12,7 +12,7 @@ body {
   border-bottom: 1px solid #ebebeb;
   font-size: 14px;
   position: relative;
-  top: 0.3em;
+  top: 0.2em;
   padding-left: 300px;
   padding-right: 300px;
 }
@@ -54,11 +54,11 @@ body {
 }
 
 .login a {
-  padding: 15px;
+  padding: 14px;
 }
 
 .reg a {
-  padding: 15px;
+  padding: 14px;
 }
 
 .fa-facebook {
@@ -199,9 +199,122 @@ body {
   background: #bbb;
 }
 
-/* ---- header ---- */
+
+/* ---- Header ---- */
+/*  Media Query  */
 @media screen and (max-width: 1199px) {
   .openBtn {
     right: 0;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .adress {
+    display: none;
+  }
+
+  .telefon {
+    display: none;
+  }
+
+  .login_reg_box {
+    position: relative;
+    top: 0;
+  }
+
+  .login a {
+    padding: 13px;
+  }
+
+  .reg a {
+    padding: 13px;
+  }
+
+  .header {
+    padding-top: 0;
+    top: 0;
+  }
+
+  .icons {
+    top: 0.3em;
+  }
+
+  .navbar-brand {
+    bottom: 20px;
+  }
+
+  .navbar-brand img {
+    width: 210px;
+    height: 90px;
+  }
+
+}
+
+/* ---- Media Query ---- */
+/* Hamburger Gomb */
+#hamburger_gomb {
+  padding: 5px 10px;
+  background: none;
+  border: none;
+  position: relative;
+  height: 40px;
+  width: 60px;
+  cursor: pointer;
+  outline: none;
+}
+
+.line {
+  position: absolute;
+  height: 2px;
+  width: 40px;
+  background: black;
+  left: 10px;
+  -webkit-transition: 0.2s all ease;
+  -moz-transition: 0.2s all ease;
+  -ms-transition: 0.2s all ease;
+  -o-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.line-t {
+  top: 10px;
+}
+
+.line-m {
+  top: 20px;
+}
+
+.line-b {
+  top: 30px;
+}
+
+button:hover .line {
+  background: #999;
+}
+
+.menu-on .line-m,
+.menu-on:hover .line-m {
+  background: rgba(0, 0, 0, 0);
+}
+
+.menu-on .line {
+  top: 20px;
+}
+
+.menu-on .line-t {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.menu-on .line-b {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* ---- Hamburger Gomb ---- */

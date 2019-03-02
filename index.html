@@ -13,6 +13,7 @@
   <link href="css/style.css" rel="stylesheet" type="text/css" />
   <link href="css/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 1451px) and (max-width: 1750px) " />
   <link href="css/mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-width: 1450px) " />
+  <script src="js.js" type="text/javascript"></script>
   <script>
     function openSearch() {
         document.getElementById("myOverlay").style.display = "block";
@@ -58,7 +59,13 @@
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon">xsx</span>
+
+        <div class="navbar-toggler-icon" id="hamburger_gomb">
+          <span class="line line-t"></span>
+          <span class="line line-m"></span>
+          <span class="line line-b"></span>
+        </div>
+
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -102,6 +109,7 @@
       </form>
     </div>
   </div>
+
 </body>
 
 </html>
