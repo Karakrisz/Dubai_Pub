@@ -24,3 +24,23 @@
 /* search  */
 
 /* ---- header ---- */
+/* carousel */
+
+.carousel-caption {
+    padding-bottom: 0px;
+}
+
+.slider_tartalmak {
+    float: left;
+    position: relative;
+}
+
+.slider_tartalmak i {
+    position: relative;
+    right: 20px;
+    font-size: 28px;
+}
+
+.rendezvenyek_desing {
+    padding: 10px 50px;
+}
