@@ -278,13 +278,13 @@ button:hover .line {
 }
 
 .carousel-caption {
-  padding-bottom: 250px;
-  background-color: black;
+  padding-bottom: 230px;
   position: absolute;
 }
 
 .carousel-caption p {
   text-align: left;
+  font-size: 28px;
 }
 
 .slider_tartalmak {
@@ -312,6 +312,7 @@ button:hover .line {
   font-size: 22px;
 }
 
+/* ---- carousel ---- */
 /*  Media Query  */
 @media screen and (max-width: 1199px) {
   .openBtn {
@@ -366,5 +367,8 @@ button:hover .line {
   }
 
 }
+
+
+
 
 /* ---- Media Query ---- */

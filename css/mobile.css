@@ -38,9 +38,14 @@
 .slider_tartalmak i {
     position: relative;
     right: 20px;
-    font-size: 28px;
+    font-size: 25px;
 }
 
 .rendezvenyek_desing {
-    padding: 10px 50px;
+    padding: 5px 20px;
+}
+
+/* carousel-indicators */
+.carousel-indicators {
+    display: none;
 }
