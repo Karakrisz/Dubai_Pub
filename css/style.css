@@ -324,6 +324,10 @@ button:hover .line {
   #demo {
     padding-top: 15px;
   }
+
+  .slider_tartalmak p {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 768px) {
