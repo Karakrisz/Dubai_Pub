@@ -372,7 +372,33 @@ button:hover .line {
 
 }
 
-
-
-
 /* ---- Media Query ---- */
+/*  Test_01  */
+.test_01 {
+  padding-left: 300px;
+  padding-right: 300px;
+  text-align: center;
+}
+
+.fa-dollar {
+  padding: 15px 23px;
+  background-color: #f64847;
+  border-radius: 50%;
+
+}
+
+.fa-bullhorn {
+  padding: 15px;
+  background-color: #f64847;
+  border-radius: 50%;
+}
+
+.fa-star {
+  padding: 15px;
+  background-color: #f64847;
+  border-radius: 50%;
+
+}
+
+
+/* ---- Test_01 ----  */
