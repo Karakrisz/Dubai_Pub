@@ -3,6 +3,9 @@ body {
   margin: auto;
 }
 
+h2 {
+  color: #686868;
+}
 
 /* Header  */
 .header {
@@ -294,11 +297,12 @@ button:hover .line {
 .slider_tartalmak i {
   position: relative;
   right: 20px;
-  font-size: 48px;
+  font-size: 52px;
+  border-radius: 50%;
 }
 
 #demo {
-  max-width: 1280px;
+  max-width: 1320px;
   margin: auto;
   position: relative;
   bottom: 30px;
@@ -381,10 +385,9 @@ button:hover .line {
 }
 
 .fa-dollar {
-  padding: 15px 23px;
+  padding: 14px 20px;
   background-color: #f64847;
   border-radius: 50%;
-
 }
 
 .fa-bullhorn {
@@ -397,8 +400,30 @@ button:hover .line {
   padding: 15px;
   background-color: #f64847;
   border-radius: 50%;
-
 }
 
 
 /* ---- Test_01 ----  */
+/*  Test_02  */
+.test_02 {
+  padding-left: 220px;
+  padding-right: 230px;
+  text-align: center;
+  position: relative;
+  top: 2em;
+}
+
+.card {
+  margin: 20px 20px;
+  padding: 30px;
+  width: 50%;
+  border: 1px solid #ccc;
+}
+
+.esemeny_tartalmak {
+  position: relative;
+  left: 90px;
+  top: 1em;
+}
+
+/* ---- Test_02 ----  */

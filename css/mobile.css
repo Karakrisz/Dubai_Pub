@@ -28,6 +28,7 @@
 
 .carousel-caption {
     padding-bottom: 0px;
+    top: 0.01em;
 }
 
 .slider_tartalmak {
@@ -56,8 +57,10 @@
 
 /* ---- carousel ---- */
 .test_01 {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+
 
 /* ---- Test_01 ----  */
