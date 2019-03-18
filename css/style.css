@@ -426,4 +426,18 @@ button:hover .line {
   top: 1em;
 }
 
+.test_02 a {
+  text-decoration: none;
+
+}
+
+.tovabbi_hireink {
+  background-color: #f64847;
+  position: relative;
+  top: 3em;
+  color: white;
+  padding: 10px 20px;
+  border-bottom: 3px solid #f89399;
+}
+
 /* ---- Test_02 ----  */

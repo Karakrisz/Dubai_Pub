@@ -61,6 +61,27 @@
     padding-right: 20px;
 }
 
-
-
 /* ---- Test_01 ----  */
+/*  Test_02  */
+.test_02 {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    position: relative;
+    top: 2em;
+}
+
+.card {
+    margin: 0px 0px;
+    padding: 0px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.esemeny_tartalmak {
+    position: relative;
+    left: 0px;
+    top: 1em;
+}
+
+/* ---- Test_02 ----  */
