@@ -440,4 +440,9 @@ button:hover .line {
   border-bottom: 3px solid #f89399;
 }
 
+.lablec {
+  position: relative;
+  top: 8em;
+}
+
 /* ---- Test_02 ----  */
