@@ -302,7 +302,7 @@ button:hover .line {
 }
 
 #demo {
-    max-width: 1320px;
+    max-width: 1400px;
     margin: auto;
     position: relative;
     bottom: 30px;
@@ -313,7 +313,7 @@ button:hover .line {
     padding: 20px 150px;
     position: relative;
     right: 20px;
-    font-size: 22px;
+
 }
 
 /* ---- carousel ---- */
@@ -404,6 +404,9 @@ button:hover .line {
     border-radius: 50%;
 }
 
+.openBtn {
+    display: none;
+}
 
 /* ---- Test_01 ----  */
 /*  Test_02  */

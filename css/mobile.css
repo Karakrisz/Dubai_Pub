@@ -98,6 +98,17 @@
 /* ---- Test_02 ----  */
 
 @media screen and (min-width: 1200px) {
+    .navbar-nav a {
+        background-color: white;
+        color: grey;
+        border-bottom: 0px;
+        padding: 15px 0;
+    }
+
+    .telefon {
+        left: 200px;
+    }
+
     .slider_tartalmak {
         float: right;
         padding-top: 100px;
