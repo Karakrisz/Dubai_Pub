@@ -21,6 +21,17 @@
     padding-right: 0px;
 }
 
+.navbar-nav a {
+    background-color: #f6f6f6;
+    color: grey;
+    border-bottom: 3px solid #cecece;
+    padding: 15px 0;
+}
+
+.dropdown-menu a {
+    border-bottom: 0;
+}
+
 /* search  */
 
 /* ---- header ---- */
@@ -83,17 +94,22 @@
     left: 0px;
     top: 1em;
 }
+
+/* ---- Test_02 ----  */
+
 @media screen and (min-width: 1200px) {
     .slider_tartalmak {
         float: right;
         padding-top: 100px;
     }
+
     .slider_tartalmak i {
         position: relative;
         right: 20px;
         font-size: 52px;
         border-radius: 50%;
     }
+
     .rendezvenyek_desing {
         border: 1px solid white;
         padding: 20px 150px;
@@ -101,29 +117,71 @@
         right: 20px;
         font-size: 22px;
     }
+
     .card {
         margin: 20px 20px;
         padding: 30px;
         width: 50%;
         border: 1px solid #ccc;
     }
+
     .esemeny_tartalmak {
         position: relative;
         left: 60px;
         top: 1em;
     }
+
     .carousel-caption p {
         text-align: left;
         font-size: 28px;
     }
+
     .test_02 {
         padding-left: 80px;
         padding-right: 80px;
 
     }
+}
 
+@media screen and (max-width: 1199px) and (min-width: 768px) {
 
+    .slider_tartalmak {
+        float: right;
+        padding-top: 90px;
+    }
 
+    .carousel-caption p {
+        text-align: left;
+        font-size: 28px;
+    }
+
+    .slider_tartalmak i {
+        position: relative;
+        right: 20px;
+        font-size: 52px;
+        border-radius: 50%;
+    }
+
+    .rendezvenyek_desing {
+        border: 1px solid white;
+        padding: 20px 150px;
+        position: relative;
+        right: 20px;
+        font-size: 22px;
+    }
+
+    .test_02 {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .card {
+        width: 40%;
+        margin: 20px 20px
+    }
+
+    .esemeny_tartalmak {
+        left: 60px;
+    }
 
 }
-/* ---- Test_02 ----  */

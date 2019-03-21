@@ -324,6 +324,7 @@ button:hover .line {
     }
 }
 
+
 @media screen and (max-width: 1180px) {
     #demo {
         padding-top: 15px;
@@ -333,6 +334,7 @@ button:hover .line {
         font-size: 30px;
     }
 }
+
 
 @media screen and (max-width: 768px) {
     .adress {
@@ -415,14 +417,13 @@ button:hover .line {
 
 .card {
     margin: 20px 20px;
-    padding: 30px;
     width: 50%;
     border: 1px solid #ccc;
 }
 
 .esemeny_tartalmak {
     position: relative;
-    left: 70px;
+    left: 90px;
     top: 1em;
 }
 
@@ -434,16 +435,41 @@ button:hover .line {
 .tovabbi_hireink {
     background-color: #f64847;
     position: relative;
-    top: 3em;
+    top: 3.5em;
     color: white;
     padding: 10px 20px;
     border-bottom: 3px solid #f89399;
+}
+
+.tovabbi_hireink:hover {
+    color: white;
 }
 
 .lablec {
     position: relative;
     top: 8em;
     padding: 0;
+    text-align: center;
+}
+
+.lablec a {
+    background-color: white;
+    text-align: center;
+    color: #f94647;
+    border: 1px solid #cecece;
+    border-radius: 50%;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 5px;
+    position: relative;
+    top: 1em;
+}
+
+.lablec p {
+    position: relative;
+    top: 2em;
+    color: #cecece;
 }
 
 /* ---- Test_02 ----  */
