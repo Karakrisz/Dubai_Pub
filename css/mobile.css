@@ -196,3 +196,46 @@
     }
 
 }
+
+@media screen and (max-width: 320px) {
+    .icons {
+        right: 10px;
+        top: 0.6em;
+    }
+
+    .login_reg_box li a {
+        padding: 13px 5px;
+    }
+
+    .fa-instagram {
+        padding: 7px 9px;
+    }
+
+    .fa-twitter {
+        padding: 7px 8px;
+    }
+
+    .fa-facebook {
+        padding: 7px 11px;
+    }
+
+    .navbar-brand img {
+        width: 165px;
+        height: 75px;
+        position: relative;
+        top: 0.3em;
+    }
+
+    .carousel-caption {
+        top: 0;
+    }
+
+    .slider_tartalmak {
+        bottom: 15px;
+    }
+
+    .slider_tartalmak p {
+        font-size: 15px;
+    }
+
+}

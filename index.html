@@ -2,36 +2,67 @@
 <html>
 
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dubai Pub & Sishabar</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU'
-    crossorigin='anonymous'>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'
+    integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="bootstrap-extension/css/4.0.0/bootstrap-extension.min.css" rel="stylesheet" type="text/css" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
-  <link href="css/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 1451px) and (max-width: 1750px) " />
+  <link href="css/tablet.css" rel="stylesheet" type="text/css"
+    media="only screen and (min-width: 1451px) and (max-width: 1750px) " />
   <link href="css/mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-width: 1450px) " />
   <link href="css/animate.css" rel="stylesheet" type="text/css" />
-  <script src="js.js" type="text/javascript"></script>
   <script src="js/wow.min.js"></script>
+  <script src="js.js" type="text/javascript"></script>
+  <script src="bootstrap-extension/js/4.0.0/bootstrap-extension.min.js"></script>
   <script>
     new WOW().init();
   </script>
   <script>
     function openSearch() {
-        document.getElementById("myOverlay").style.display = "block";
-      }
+      document.getElementById("myOverlay").style.display = "block";
+    }
 
-      function closeSearch() {
-        document.getElementById("myOverlay").style.display = "none";
-      }
+    function closeSearch() {
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    function openBejelentkezes() {
+      document.getElementById("Bejelentkezes").style.display = "block";
+    }
+
+    function closeBejelentkezes() {
+      document.getElementById("Bejelentkezes").style.display = "none";
+    }
+
+    function openRegisztaralas() {
+      document.getElementById("Regisztaralas").style.display = "block";
+    }
+
+    function closeRegisztaralas() {
+      document.getElementById("Regisztaralas").style.display = "none";
+    }
+
+    function openEtlap() {
+      document.getElementById("Etlap").style.display = "block";
+    }
+
+    function closeEtlap() {
+      document.getElementById("Etlap").style.display = "none";
+    }
   </script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="74">
+  <div class="d-none d-md-block">
+    <div class="bg-purple text-white rounded" id="toTop"></div>
+  </div>
   <div class="header">
     <div class="container col-xl-12">
       <ul class="nav">
@@ -49,10 +80,10 @@
           <a href="#" class="google"><i class="fa fa-instagram"></i></a>
         </div>
         <li class="nav-item login">
-          <a class="nav-link bejelent" href="#">Bejelentkezés</a>
+          <a class="nav-link bejelent" onclick="openBejelentkezes()" href="#">Bejelentkezés</a>
         </li>
         <li class="nav-item reg">
-          <a class="nav-link" href="#">Regisztrálás</a>
+          <a class="nav-link" onclick="openRegisztaralas()" href="#">Regisztrálás</a>
         </li>
       </ul>
 
@@ -79,22 +110,23 @@
             <a class="nav-link" href="#">Főoldal <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">Étlap-Itallap
+            <a onclick="openEtlap()" href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Étlap-Itallap
             </a>
+            <!--
             <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="#">Itallap</a>
               <a class="dropdown-item" href="#">Vipipipa</a>
-            </div>
+            </div>-->
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Galléria</a>
+            <a class="nav-link" href="#">Galéria</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Rendezvényszervezés</a>
+            <a class="nav-link rolling" href="#menu1">Rendezvényszervezés</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Eseménynaptár</a>
+            <a class="nav-link rolling" href="#menu2">Eseménynaptár</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Foglalás</a>
@@ -106,13 +138,40 @@
     </div>
 
   </nav>
-  <div id="myOverlay" class="overlay">
+  <div id="myOverlay" class="overlay wow slideInDown">
     <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
     <div class="overlay-content">
       <form action="/action_page.php">
         <input type="text" placeholder="Search.." name="search">
         <button type="submit"><i class="fa fa-search"></i></button>
       </form>
+    </div>
+  </div>
+
+  <div id="Bejelentkezes" class="overlay wow slideInDown">
+    <span class="closebtn" onclick="closeBejelentkezes()" title="Close Overlay">×</span>
+    <div class="overlay-content">
+      <div class="alert alert-light">
+        <strong></strong><a href="#" class="alert-link">A rendszer feldolgozás alatt</a>.
+      </div>
+    </div>
+  </div>
+
+  <div id="Regisztaralas" class="overlay wow slideInDown">
+    <span class="closebtn" onclick="closeRegisztaralas()" title="Close Overlay">×</span>
+    <div class="overlay-content">
+      <div class="alert alert-light">
+        <strong></strong><a href="#" class="alert-link">A rendszer feldolgozás alatt</a>.
+      </div>
+    </div>
+  </div>
+
+  <div id="Etlap" class="overlay wow slideInDown">
+    <span class="closebtn" onclick="closeEtlap()" title="Close Overlay">×</span>
+    <div class="overlay-content">
+      <div class="alert alert-light">
+        <strong></strong><a href="#" class="alert-link">A rendszer feldolgozás alatt</a>.
+      </div>
     </div>
   </div>
 
@@ -132,9 +191,12 @@
         <div class="carousel-caption">
           <div class="slider_tartalmak">
             <p class="rendezvenyek_desing wow heartBeat" data-wow-duration="2000ms">Rendezvények</p>
-            <p class="wow slideInRight" data-wow-duration="1000ms"><i class="fas fa-check-circle" style="color:#f64847"></i>Italok</p>
-            <p class="wow slideInRight" data-wow-duration="2000ms"><i class="fas fa-check-circle" style="color:#f64847"></i>Programok</p>
-            <p class="wow slideInRight" data-wow-duration="3000ms"><i class="fas fa-check-circle" style="color:#f64847"></i>Zártkörű
+            <p class="wow slideInRight" data-wow-duration="1000ms"><i class="fas fa-check-circle"
+                style="color:#f64847"></i>Italok</p>
+            <p class="wow slideInRight" data-wow-duration="2000ms"><i class="fas fa-check-circle"
+                style="color:#f64847"></i>Programok</p>
+            <p class="wow slideInRight" data-wow-duration="3000ms"><i class="fas fa-check-circle"
+                style="color:#f64847"></i>Zártkörű
               Rendezvények</p>
           </div>
         </div>
@@ -144,9 +206,12 @@
         <div class="carousel-caption">
           <div class="slider_tartalmak">
             <p class="rendezvenyek_desing wow heartBeat" data-wow-duration="2000ms">Rendezvények</p>
-            <p class="wow slideInRight" data-wow-duration="1000ms"><i class="fas fa-check-circle" style="color:#f64847"></i>Italok</p>
-            <p class="wow slideInRight" data-wow-duration="2000ms"><i class="fas fa-check-circle" style="color:#f64847"></i>Programok</p>
-            <p class="wow slideInRight" data-wow-duration="3000ms"><i class="fas fa-check-circle" style="color:#f64847"></i>Zártkörű
+            <p class="wow slideInRight" data-wow-duration="1000ms"><i class="fas fa-check-circle"
+                style="color:#f64847"></i>Italok</p>
+            <p class="wow slideInRight" data-wow-duration="2000ms"><i class="fas fa-check-circle"
+                style="color:#f64847"></i>Programok</p>
+            <p class="wow slideInRight" data-wow-duration="3000ms"><i class="fas fa-check-circle"
+                style="color:#f64847"></i>Zártkörű
               Rendezvények</p>
           </div>
         </div>
@@ -156,9 +221,12 @@
         <div class="carousel-caption">
           <div class="slider_tartalmak">
             <p class="rendezvenyek_desing wow heartBeat" data-wow-duration="2000ms">Rendezvények</p>
-            <p class="wow slideInRight" data-wow-duration="1000ms"><i class="fas fa-check-circle" style="color:#f64847"></i>Italok</p>
-            <p class="wow slideInRight" data-wow-duration="2000ms"><i class="fas fa-check-circle" style="color:#f64847"></i>Programok</p>
-            <p class="wow slideInRight" data-wow-duration="3000ms"><i class="fas fa-check-circle" style="color:#f64847"></i>Zártkörű
+            <p class="wow slideInRight" data-wow-duration="1000ms"><i class="fas fa-check-circle"
+                style="color:#f64847"></i>Italok</p>
+            <p class="wow slideInRight" data-wow-duration="2000ms"><i class="fas fa-check-circle"
+                style="color:#f64847"></i>Programok</p>
+            <p class="wow slideInRight" data-wow-duration="3000ms"><i class="fas fa-check-circle"
+                style="color:#f64847"></i>Zártkörű
               Rendezvények</p>
           </div>
         </div>
@@ -168,9 +236,12 @@
         <div class="carousel-caption">
           <div class="slider_tartalmak">
             <p class="rendezvenyek_desing wow heartBeat" data-wow-duration="2000ms">Rendezvények</p>
-            <p class="wow slideInRight" data-wow-duration="1000ms"><i class="fas fa-check-circle" style="color:#f64847"></i>Italok</p>
-            <p class="wow slideInRight" data-wow-duration="2000ms"><i class="fas fa-check-circle" style="color:#f64847"></i>Programok</p>
-            <p class="wow slideInRight" data-wow-duration="3000ms"><i class="fas fa-check-circle" style="color:#f64847"></i>Zártkörű
+            <p class="wow slideInRight" data-wow-duration="1000ms"><i class="fas fa-check-circle"
+                style="color:#f64847"></i>Italok</p>
+            <p class="wow slideInRight" data-wow-duration="2000ms"><i class="fas fa-check-circle"
+                style="color:#f64847"></i>Programok</p>
+            <p class="wow slideInRight" data-wow-duration="3000ms"><i class="fas fa-check-circle"
+                style="color:#f64847"></i>Zártkörű
               Rendezvények</p>
           </div>
         </div>
@@ -180,9 +251,12 @@
         <div class="carousel-caption">
           <div class="slider_tartalmak">
             <p class="rendezvenyek_desing wow heartBeat" data-wow-duration="2000ms">Rendezvények</p>
-            <p class="wow slideInRight" data-wow-duration="1000ms"><i class="fas fa-check-circle" style="color:#f64847"></i>Italok</p>
-            <p class="wow slideInRight" data-wow-duration="2000ms"><i class="fas fa-check-circle" style="color:#f64847"></i>Programok</p>
-            <p class="wow slideInRight" data-wow-duration="3000ms"><i class="fas fa-check-circle" style="color:#f64847"></i>Zártkörű
+            <p class="wow slideInRight" data-wow-duration="1000ms"><i class="fas fa-check-circle"
+                style="color:#f64847"></i>Italok</p>
+            <p class="wow slideInRight" data-wow-duration="2000ms"><i class="fas fa-check-circle"
+                style="color:#f64847"></i>Programok</p>
+            <p class="wow slideInRight" data-wow-duration="3000ms"><i class="fas fa-check-circle"
+                style="color:#f64847"></i>Zártkörű
               Rendezvények</p>
           </div>
         </div>
@@ -192,9 +266,12 @@
         <div class="carousel-caption">
           <div class="slider_tartalmak">
             <p class="rendezvenyek_desing wow heartBeat" data-wow-duration="2000ms">Rendezvények</p>
-            <p class="wow slideInRight" data-wow-duration="1000ms"><i class="fas fa-check-circle" style="color:#f64847"></i>Italok</p>
-            <p class="wow slideInRight" data-wow-duration="2000ms"><i class="fas fa-check-circle" style="color:#f64847"></i>Programok</p>
-            <p class="wow slideInRight" data-wow-duration="3000ms"><i class="fas fa-check-circle" style="color:#f64847"></i>Zártkörű
+            <p class="wow slideInRight" data-wow-duration="1000ms"><i class="fas fa-check-circle"
+                style="color:#f64847"></i>Italok</p>
+            <p class="wow slideInRight" data-wow-duration="2000ms"><i class="fas fa-check-circle"
+                style="color:#f64847"></i>Programok</p>
+            <p class="wow slideInRight" data-wow-duration="3000ms"><i class="fas fa-check-circle"
+                style="color:#f64847"></i>Zártkörű
               Rendezvények</p>
           </div>
         </div>
@@ -204,9 +281,12 @@
         <div class="carousel-caption">
           <div class="slider_tartalmak">
             <p class="rendezvenyek_desing wow heartBeat" data-wow-duration="2000ms">Rendezvények</p>
-            <p class="wow slideInRight" data-wow-duration="1000ms"><i class="fas fa-check-circle" style="color:#f64847"></i>Italok</p>
-            <p class="wow slideInRight" data-wow-duration="2000ms"><i class="fas fa-check-circle" style="color:#f64847"></i>Programok</p>
-            <p class="wow slideInRight" data-wow-duration="3000ms"><i class="fas fa-check-circle" style="color:#f64847"></i>Zártkörű
+            <p class="wow slideInRight" data-wow-duration="1000ms"><i class="fas fa-check-circle"
+                style="color:#f64847"></i>Italok</p>
+            <p class="wow slideInRight" data-wow-duration="2000ms"><i class="fas fa-check-circle"
+                style="color:#f64847"></i>Programok</p>
+            <p class="wow slideInRight" data-wow-duration="3000ms"><i class="fas fa-check-circle"
+                style="color:#f64847"></i>Zártkörű
               Rendezvények</p>
           </div>
         </div>
@@ -221,7 +301,7 @@
   </div>
   <div class="container-fluid test_01">
     <div class="row">
-      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+      <div id="menu1" class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
         <a href="#">
           <i class="fa fa-dollar" style="font-size:27px;color:white"></i>
 
@@ -260,7 +340,7 @@
     </div>
   </div>
   <hr>
-  <div class="container-fluid test_02">
+  <div class="container-fluid test_02" id="menu2">
     <h2>Események <i style="background-color:#f7474a;color: white;">hírek</i></h2>
     <div class="esemeny_tartalmak">
       <div class="row">
